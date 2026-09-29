@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBB4LQTn0vRq4ydPLp-uTj_lEUHOHYWUU18JlCq5KuMw&s=10" alt="Images" />
+    <style>
+    div{
+      width:100px;
+      height:200px;
+      background-color:blanchedalmond;
+      transition: width 5s,height 5s;
+      background-color: 5s;
+    }
+    div:hover{
+        width:400px;
+    height:500px;
+    background-color:rgb(247, 117, 156);
+    display:block;
+
+    }
+    img{
+        width:300px;
+        height:40px;
+        border: 1px solid burlywood;
+        transition: width 3s,height 4s;
+        transition-delay: 2s;
+
+    }    
+    img:hover{
+        width:400px;
+        height:60px;
+        border-radius:50%;
+        transform:rotate(360deg);
+        transition: width 3s,height 4s;
+        
+    }
+    p{
+        border:2px dotted brown;
+        color:blue;
+        font-size: 20px;
+        animation: cs;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes cs{
+        from{
+            border:2px dashed brown;
+            color:brown;
+            font-sizew:40px;
+        }
+    }
+    div{
+        width:100px;
+        height:100px;
+        animation-name:ex;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+
+    }
+    @keyframes ex{
+        0%{background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR8Lf_XMIGZBtayJpJNPFmmCALIgEqjfv2qj3bedJAQw&s=10");background-size:300px 300px}
+        25%{background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzJiL2savWoGa11xgA0dE_0XjhbdeZokBLo_dScmZJKg&s=10");background-size:300px 300px}
+        50%{background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDe-s2vviqUwsmTSYmkW1XkI9iwN3cVpVanaPSgTCKXg&s=10");background-size:300px 300px}
+        75%{background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7JjYbO4WJg6QXPLdvkdg16La0KeBP5cBXq0lyO_Y2iw&s=10");background-size:300px 300px}
+    }
+    </style>
+    <p>The html stands for hypertext markup language</p>
+    <div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href = "5.3.2.css" rel = "stylesheet"/>
+    <script>
+        function getamt(){
+            debugger 
+            var sc=document.getElementById("source")
+            var city=sc.options[sc.selectedIndex].text;
+
+            var dc=document.getElementById("dest");
+            var dcity=dc.options[dc.selectedIndex].text;
+            if (city==dcity){
+                alert("Source and target citry same")
+                dc.selectedIndex=0;
+            }
+            else{
+                var ns=document.getElementById("txtNoseat").value;
+                var amt=document.getElementById("txtAmt").value;
+                var tamt=parseInt(ns)*parseInt(amt);
+                document.getElementById("txtTotalAmount").value=tamt;
+
+
+            }
+
+        }
+        function chkcity(){
+
+
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-primary">TICKET BOOKING</h2>
+        <div class="card px-4 py-5">
+        <form>
+            <div class="mb-4 ms-4">
+                <label class="form-label text-secondary">Enter source</label>
+                <select class="form-select" id="source">
+                    <option>Select option</option>
+                    <option >Mysr</option>
+                    <option >Benglr</option>
+                    <option >Hasn</option>
+                </select>
+                </div>
+                
+                <div class="mb-4 ms-4">
+                <label class="form-label text-secondary">Enter target</label>
+                <select class="form-select" id="dest" onchange="chkcity()">
+                    <option>Select option</option>
+                    <option >Mysr</option>
+                    <option >Benglr</option>
+                    <option >Hasn</option>
+                </select>
+                </div>
+
+                <div class="mb-4 ms-4">
+                <label class="form-label">Enter no of seats</label>
+                    <input type="text" class="form-control" id="txtNoseat"/>
+                    <label class="form-label">Enter Amount</label>
+                    <input type="text" class="form-control" id="txtAmt"/>
+                    <label class="form-label">Total</label>
+                    <input type="text" class="form-control" id="txtTotalAmount"/>
+                </div>
+
+                    <div class="mb-3 ms-3 text-end">
+                        <input type="button" value="add" class="btn btn-success btn-lg" onclick="getamt()" />
+                    </div>
+
+
+        
+        
+    </div>
+</form>
+
+</body>
+</html>

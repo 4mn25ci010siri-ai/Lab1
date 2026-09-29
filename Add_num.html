@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href = "5.3.2.css" rel = "stylesheet"/>
+    <script>
+        function addnum(){
+            var num1=document.getElementById("txtFNum").value;
+            var num2=document.getElementById("txtSNum").value;
+            var result=parseInt(num1)+Number(num2);
+            document.getElementById("txtResult").value=result;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2> Add 2 Numbers</h2>
+        <div class="card px-3 py-3">
+            <form>
+                <div class mb-3 ms-3>
+                    <label class="form-label">Enter fisrt No</label>
+                    <input type="text" class="form-control" id="txtFNum"/>
+                    <label class="form-label">second No</label>
+                    <input type="text" class="form-control" id="txtSNum"/>
+                    <label class="form-label">Result</label>
+                    <input type="text" class="form-control" id="txtResult" disabled/>
+
+                </div>
+                <div class="mb-3 ms-3 text-end">
+                    <input type="button" value="add" class="btn btn-success btn-lg" onclick="addnum()" add/>
+                </div>
+            </form>
+            </for>
+        </div>
+
+    </div>
+</body>
+</html>
